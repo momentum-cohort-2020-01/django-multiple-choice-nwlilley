@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
+
+
+<!-- {% block meta %}
+<script src="{% static 'js/waddup.js' %}" defer></script>
+{% endblock %} -->
 
 {% block content %}
 <div class='question-detail-box'>
@@ -10,7 +16,7 @@
 <form class='add-answer-form' id='add-answer'>
     <label for='question-body'>Answer</label>
     <textarea class='text-field' id='answer-body' rows='4'></textarea>
-    <button class='button' id='answer-submit' type=submit>SPLAT</button>
+    <button class='button' id='answer-submit' type=submit>ANSWER</button>
 </form>
 
 {% for answer in answers %}
